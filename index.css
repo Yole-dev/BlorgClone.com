@@ -1,0 +1,330 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    max-height: 4400px;
+}
+
+header {
+    background-color:hsl(356, 100%, 66%);
+    border-bottom-left-radius: 5rem;
+}
+
+header section {
+    background-image: url(images/bg-pattern-intro-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 255%;
+    display: flex;
+    flex-direction: column;
+}
+
+header section nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem 5rem 2rem;
+}
+
+
+header section nav button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    align-self: center;
+}
+
+header section nav .closeNavBtn {
+    display: none;
+}
+
+header section h2 {
+    color: white;
+    text-align: center;
+    font-size: 37px;
+    margin-top: 4rem;
+}
+
+header section p {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1rem; 
+}
+
+header section > div:first-of-type {
+    align-self: center;
+    background: white;
+    width: 320px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.navContent  {
+    align-self: center;
+    border-radius: 10px;
+    padding: 2rem 0 2rem 0;
+    color: hsl(240, 10%, 16%);
+    font-weight: bold;
+    display: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.267);
+}
+
+.navContent ul {
+    list-style-type: none;
+}
+
+.navContent ul li:first-of-type, :nth-child(2), :nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+hr {
+    width: 250px;
+    position: relative;
+    left: 2.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.navContent ul li button {
+    color:hsl(13, 100%, 72%);
+    background: transparent;
+    border: none;
+}
+
+.navContent ul li a {
+    text-decoration: none;
+    color: hsl(240, 10%, 16%);
+    font-weight: bold;
+}
+
+.navContent ul li:last-of-type button {
+    color: white;
+    background-image: linear-gradient(to left, hsl(353, 100%, 62%), hsl(13, 100%, 72%));
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.9rem 1.4rem 0.9rem 1.4rem;
+    border-radius: 2rem;
+}
+
+.firstBtnUp {
+    display: none;
+}
+
+.secondBtnUp {
+    display: none;
+}
+
+.lastBtnUp {
+    display: none;
+}
+
+.navContent ul > ul {
+    background-color: hsl(240, 2%, 79%);
+    width: 250px;
+    position: relative;
+    left: 2.3rem;
+    border-radius: 5px;
+    margin: 2rem 0 2rem 0;
+    display: none;
+}
+
+.navContent ul > ul li:first-of-type{
+    padding: 1.5rem 0 1rem 0;
+}
+
+.navContent ul > ul li:nth-child(2){
+    padding:0 0 1rem 0;
+}
+
+.navContent ul > ul li:nth-child(3){
+    padding:0 0 1.5rem 0;
+}
+
+.navContent ul > ul li:nth-child(4){
+    padding:0 0 1.5rem 0;
+}
+
+.navContent ul > ul li:nth-child(5) {
+    padding:0 0 1.5rem 0;
+}
+
+.navContent ul > ul li a {
+    text-decoration: none;
+    color: hsl(207, 13%, 34%);
+}
+
+header > div:first-of-type ul {
+    list-style-type: none;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    padding-bottom: 4rem;
+}
+
+.headerButtons button:first-of-type {
+    background-color: white;
+    color: hsl(356, 100%, 66%);
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0.9rem 1.3rem 0.9rem 1.3rem;
+    border-radius: 2rem;
+    border: none;
+    align-self: start;
+}
+
+.headerButtons button:last-of-type {
+    background-color: rgba(0, 0, 0, 0.096);
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0.9rem 1.3rem 0.9rem 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid white;
+    align-self: center;
+}
+
+/* end of header section */
+
+
+/* beginning of main section */
+
+main h2 {
+    color: hsl(208, 49%, 24%);
+    margin: 2rem 0 2rem 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+main p {
+    font-weight: 100;
+    line-height: 1.5;
+    color: hsl(207, 13%, 34%);
+    font-size: 20px;
+    text-align: center;
+}
+
+.firstMainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0 2rem 0;
+}
+
+.firstMainDiv img {
+    max-width: 370px;
+}
+
+.secondMainDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15rem;
+    background-image: linear-gradient(to top, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    border-top-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+
+.secondMainDiv div {
+    background-image: url(images/bg-pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-size: 170%;
+    background-position: 50% 780%;
+    border-top-right-radius: 5rem;
+}
+
+.secondMainDiv div img {
+    max-width: 370px;
+    position: relative;
+    bottom: 11.5rem;
+}
+
+.secondMainDiv div h2 {
+    color: white;
+    margin-top: -11.5rem;
+}
+
+.secondMainDiv div p {
+    color: white;
+    padding-bottom: 5rem;
+}
+
+.thirdMainDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.thirdMainDiv img {
+    max-width: 370px;
+}
+
+/* end of main section */
+
+
+/* beginning of footer section */
+
+footer {
+    background: hsl(240, 10%, 16%);
+    color: hsl(0, 0%, 100%);
+    border-top-right-radius: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 1rem 0;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 30px;
+    padding: 2rem 0 2rem 0;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li:nth-child(2), :nth-child(3) {
+    margin-bottom: 0;
+}
+
+footer div ul li:nth-child(2), :nth-child(4) {
+    margin: 1rem 0 1rem 0;
+}
+
+
+footer ul li a {
+    text-decoration: none;
+    color:hsla(0, 0%, 100%, 0.685);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+}
+
+/* end of footer section */
+
+
+
+
+/* desktop view */
+@media screen and (min-width: 1440px) {
+   .openNavBtn {
+        display: none;
+   }
+}
