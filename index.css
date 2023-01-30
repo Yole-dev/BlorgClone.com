@@ -53,11 +53,19 @@ header section h2 {
     margin-top: 4rem;
 }
 
-header section p {
+header section h2:nth-child(2) {
+    display: none;
+}
+
+.firstP{
     color: white;
     text-align: center;
     font-size: 20px;
     margin-top: 1rem; 
+}
+
+.secondP {
+    display: none;
 }
 
 header section > div:first-of-type {
@@ -209,6 +217,18 @@ main h2 {
     text-align: center;
 }
 
+.desktoph2 {
+    display: none;
+}
+
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
 main p {
     font-weight: 100;
     line-height: 1.5;
@@ -224,8 +244,17 @@ main p {
     margin: 5rem 0 2rem 0;
 }
 
-.firstMainDiv img {
+.firstMainDiv > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.mobileImage {
     max-width: 370px;
+}
+
+.desktopImage {
+    display: none;
 }
 
 .secondMainDiv {
@@ -270,6 +299,10 @@ main p {
 
 .thirdMainDiv img {
     max-width: 370px;
+}
+
+.thirdMainDiv div {
+    margin-right: 0rem;
 }
 
 /* end of main section */
@@ -329,9 +362,185 @@ footer ul li a {
 
 
 
-/* desktop view */
+/* For desktop view */
 @media screen and (min-width: 1440px) {
+
+    body {
+        overflow-x: hidden;
+        max-height: 2300px;
+    }
+
    .openNavBtn {
         display: none;
    }
+
+   header section {
+        background-size: 165%;
+        background-position: 10% 54%;
+   }
+
+   header section h2:first-of-type {
+        display: none;
+   }
+
+   header section h2:nth-child(2) {
+        display: block;
+        font-size: 50px ;
+    }
+
+
+    .firstP {
+        display: none;
+    }
+
+    .secondP {
+        display: block;
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    .headerButtons {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .firstMainDiv > div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 4rem;
+        margin-top: -4rem;
+    }
+
+    .firstMainDiv > h2 {
+        margin: 2rem 0 0rem 0;
+        font-size: 40px;
+    }
+
+
+    .mobileImage {
+        display: none;
+    }
+
+    .mobileh2 {
+        display: none;
+    }
+
+    .desktoph2 {
+        display: block;
+    }
+
+    .desktopImage {
+        display: block;
+        max-width: 700px;
+        position: relative;
+        left: 19rem;
+    }
+
+    main h2 {
+        text-align: left;
+        font-size: 40px;
+    }
+
+    main p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .firstMainDiv h2 {
+        font-size: 25px;
+    }
+
+    .secondMainDiv {
+        display: block;
+        margin-top: 0rem;
+        background-image: linear-gradient(to top, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+    }
+    
+    .secondMainDiv > div {
+        background-image: url(images/bg-pattern-circles.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: -140% 80%;
+        border-top-right-radius: 5rem;
+    }
+    
+    .secondMainDiv div img {
+        max-width: 370px;
+        position: relative;
+        top: 4.5rem;
+    }
+    
+    .secondMainDiv div h2 {
+        color: white;
+        margin-top: 2rem;
+    }
+    
+    .secondMainDiv div p {
+        color: white;
+        padding-bottom: 2rem;
+    }
+
+    .secondMainDiv > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    .thirdMainDiv {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 5.3rem 0 2rem 0;
+    }
+
+    .thirdMainDiv h2 {
+        font-size: 25px;
+    }
+
+    .thirdMainDiv img {
+        max-width: 700px;
+        position: relative;
+        right: 20.7rem;
+    }
+
+    .thirdMainDiv div {
+        margin-right: 5rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .footerNav {
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+        text-align: left;
+    }
+
+    .footerNav div h2 {
+        padding-top: 0;
+        font-size: 22px;
+    }
+
+    .footerNav div li a {
+        font-size: 17px;
+    }
 }
