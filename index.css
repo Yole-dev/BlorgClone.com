@@ -1,8 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Overpass', 'Ubuntu', sans-serif;
 }
 
 body {
@@ -236,7 +242,7 @@ main p {
     background-image: url(images/bg-pattern-circles.svg);
     background-repeat: no-repeat;
     background-size: 170%;
-    background-position: 50% 780%;
+    background-position: 50% 360%;
     border-top-right-radius: 5rem;
 }
 
@@ -259,6 +265,7 @@ main p {
 .thirdMainDiv {
     display: flex;
     flex-direction: column;
+    align-content: center;
 }
 
 .thirdMainDiv img {
